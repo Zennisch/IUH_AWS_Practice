@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const data = require('./datas/data.js');
+const iamUsers = require('./utility/accessKeyParser.js');
 
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
@@ -22,4 +23,5 @@ app.post('/create', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
+    console.log(`IAM Users: ${iamUsers}`);
 });
