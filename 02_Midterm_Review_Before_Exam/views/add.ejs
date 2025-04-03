@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <h1 class="text-center">Thêm xe</h1>
+            <a href="/" class="text-center d-block">Quay về</a>
+        </header>
+        <main>
+            <div class="w-75 mx-auto">
+                <form
+                    action="/add"
+                    method="POST"
+                    enctype="multipart/form-data"
+                >
+                    <div class="mb-3">
+                        <label for="name" class="form-label">name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="form-label">type</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="type"
+                            name="type"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">price</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="price"
+                            name="price"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">image</label>
+                        <input
+                            type="file"
+                            class="form-control"
+                            id="image"
+                            name="image"
+                            required
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Thêm
+                    </button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
